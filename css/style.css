@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'Cherolina';
+    src: url(fonts/Cherolina.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'Gruppo';
+    src: url(fonts/Gruppo-Regular.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'Style';
+    src: url(fonts/StyleScript-Regular.ttf)format('truetype');
+}
+
+body {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 50px;
+}
+
+a {
+    color: rgb(0, 0, 0);  
+    text-decoration: none;  
+}
+
+a:hover {
+    background-color: black;
+    color: rgb(200, 200, 200);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(36, 36, 36); 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-item a {
+    color: rgb(255, 255, 255);  
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: 'Gruppo', 'Times New Roman', Times, serif;
+}
+
+.nav-item:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-item:hover a {
+    color: rgb(135, 135, 135);
+}
+
+.banner {
+    margin-top: 0;
+    background-image:url("images/home-banner.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    height: 50vh;
+}
+
+.banner h1 {
+    font-family: 'Cherolina', sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 2px #474747;
+}
+
+.banner p {
+    font-family: 'Gruppo', sans-serif;
+    text-shadow: 3px 3px 2px #474747;
+    font-size: 200%;
+}
+
+.introduction {
+    padding: 50px 50px 0px 50px;
+    text-align: center;
+}
+
+.introduction p {
+    padding-bottom: 20px;
+}
+
+.introduction img {
+    padding-bottom: 40px;
+}
+
+.aboutme {
+    color: white;
+    background-image: url("images/skyline.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    position: relative;
+    margin: 40px 0px;
+}
+
+.aboutme-tint {
+    padding: 50px;
+    background-color: rgba(0,0,0,0.6);
+    height: 80vh;
+}
+
+.aboutme img {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutme p {
+    padding: 20px;
+    text-align: center;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item-col {
+    font-weight: normal;
+    padding: 50px;
+    text-align: center;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0px 50px 20px 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center; 
+    width: 300px;
+    height: 410px;
+    margin: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+    padding: 0px 20px;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Gruppo', sans-serif;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-color: white;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+#separator {
+    max-width: 85%;
+    height: auto;
+    padding: 10px 20px 0px 20px;
+}
+
+#line {
+    display: block;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+}
+
+.contact-intro {
+    margin-top: 0;
+    background-image:url("images/citylights.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details {
+    text-align: center;
+    color: white;
+}
+
+.contact-details h1 {
+    font-family: 'Style', sans-serif;
+    font-weight: normal;
+}
+
+.contact-details p {
+    padding-bottom: 20px;
+}
+
+.contact-details img {
+    padding-bottom: 20px;
+}
+
+.one-col {
+    height: 30vh;
+    width: 50vh;
+    text-align: center;
+    padding: 20px 50px 10px 50px;
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: "100%";
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 375px;
+    height: 125px;
+    resize: none;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1068px) {
+    .three-col {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .aboutme {
+        min-height: 60vh;
+    }
+
+    .aboutme-tint {
+        height: 60vh;
+    }
+}
+
+footer {
+    background-color: rgb(36, 36, 36);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.footer p, footer a {
+    color: rgb(255, 255, 255);  
+    padding: 10px 15px;
+    font-family: 'Gruppo', 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.footer-items:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-items:hover a{
+    color: rgb(135, 135, 135);
+}

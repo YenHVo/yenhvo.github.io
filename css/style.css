@@ -276,8 +276,8 @@ input {
 }
 
 textarea {
-    width: 375px;
-    height: 125px;
+    width: 50vh;
+    height: 15vh;
     resize: none;
     padding: 10px;
     margin: 0 auto;
